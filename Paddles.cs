@@ -21,7 +21,7 @@ namespace c_sharp_pong
     }
     class RightPaddle
     {
-        public float x = 250;
+        public float x = 275;
         public float y = 100;
         public float vy = 0;
 

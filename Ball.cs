@@ -18,22 +18,10 @@ namespace c_sharp_pong
 
             x += vx;
             y += vy;
-            if (x > 250)
-            {
-                vx = -2;
-            }
-            else if (x < 0)
-            {
-                vx = 2;
-            }
-            if( y > 250)
-            {
-                vy = -2;
-            }
-            else if( y < 0)
-            {
-                vy = 2;
-            }
+            if (x > 275) { vx = -2; }
+            if (x < 0  ) { vx =  2; }
+            if (y > 250) { vy = -2; }
+            if (y < 0  ) { vy =  2; }
         }
     }
 }

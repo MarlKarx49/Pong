@@ -8,6 +8,9 @@ namespace pong
     class Canvas:Form
     {
         public Game game;
+
+        public int height = 600;
+        public int width = 800;
         public Canvas()
         {
             this.DoubleBuffered = true;
@@ -26,7 +29,7 @@ namespace pong
             // 
             // Canvas
             // 
-            this.ClientSize = new System.Drawing.Size(1000, 1000);
+            ClientSize = new System.Drawing.Size(width, height);
             this.Name = "Canvas";
             this.Load += new System.EventHandler(this.Canvas_Load);
             this.ResumeLayout(false);
