@@ -29,7 +29,8 @@ namespace pong
             // 
             // Canvas
             // 
-            ClientSize = new System.Drawing.Size(width, height);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.ClientSize = new System.Drawing.Size(784, 561);
             this.Name = "Canvas";
             this.Load += new System.EventHandler(this.Canvas_Load);
             this.ResumeLayout(false);

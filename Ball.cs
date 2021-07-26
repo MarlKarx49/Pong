@@ -7,10 +7,10 @@ namespace c_sharp_pong
 {
     class Ball
     {
-        private float x = 10;
-        private float y = 90;
-        private float vx = 2;
-        private float vy = 2;
+        public float x = 10;
+        public float y = 90;
+        public float vx = 2;
+        public float vy = 2;
 
         public void Render(Graphics graphics)
         { 
@@ -18,9 +18,9 @@ namespace c_sharp_pong
 
             x += vx;
             y += vy;
-            if (x > 275) { vx = -2; }
+            if (x > Form1.windowWidth) { vx = -2; }
             if (x < 0  ) { vx =  2; }
-            if (y > 250) { vy = -2; }
+            if (y > Form1.windowHeight) { vy = -2; }
             if (y < 0  ) { vy =  2; }
         }
     }
